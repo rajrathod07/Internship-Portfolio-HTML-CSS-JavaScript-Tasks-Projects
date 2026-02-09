@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple DOM Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 80%;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #message {
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Sign Up Form</h2>
+        <p>Enter your username below:</p>
+
+        <input type="text" id="username" placeholder="Type name here...">
+        <br>
+        <button id="submitBtn">Submit</button>
+
+        <p id="message"></p>
+    </div>
+
+    <script>
+
+
+        let inputField = document.getElementById("username");
+        let myButton = document.getElementById("submitBtn");
+        let messageBox = document.getElementById("message");
+
+
+        myButton.addEventListener("click", function () {
+
+
+            let name = inputField.value;
+
+
+            if (name === "") {
+
+                messageBox.innerText = "❌ Error: Please enter a name!";
+                messageBox.style.color = "red";
+            } else {
+
+                messageBox.innerText = "✅ Success! Welcome, " + name;
+                messageBox.style.color = "green";
+
+                inputField.value = "";
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .card {
+        border: 2px solid black;
+        width: 25vw;
+        margin: 150px auto;
+        padding: 20px;
+        position: relative;
+        display: block;
+        float: left;
+        margin: 25px;
+        overflow: auto;
+        border-radius: 18px;
+        box-sizing: border-box;
+      }
+
+      .card2{
+        position: relative;
+        
+        
+      }
+
+      .card2 img{
+        width: 650px;
+          z-index: -1;
+          position: absolute;
+          top: 0;
+      }
+
+      .card2 p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+      }
+
+      .card img {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        object-fit: cover;
+        border-radius: 16px;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+
+      .tag {
+        font-size: 14px;
+        font-weight: bold;
+        color: #0e4da6a2;
+        background-color: #acacac;
+        padding: 5px 10px;
+        border-radius: 18px;
+        display: inline-block;
+        margin-right: 5px;
+      }
+
+      .btn {
+        cursor: pointer;
+        background-color: #c8c7c7;
+        color: rgb(3, 85, 225);
+        padding: 12px 20px;
+        border-radius: 28px;
+        font-size: 14px;
+        font-weight: bold;
+        border: none;
+        display: block;
+        margin: 20px auto 0;
+      }
+
+      .white{
+        color: rgb(255, 0, 0);
+        border:2px solid white;
+        padding: 5px;
+        background-color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card">
+      <img src="Assets/mywall1.jpeg" alt="Sample Image" />
+
+      <span class="tag">Hello</span>
+      <span class="tag">World</span>
+
+      <h1>Sample Heading</h1>
+
+      <p>
+        This is a sample paragraph for demonstration purposes. Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Incidunt sapiente magni illo sed
+        nesciunt.
+      </p>
+
+      <button class="btn">Read More</button>
+    </div>
+    <div class="card">
+      <img src="Assets/mywall2.png" />
+
+      <span class="tag">Hello</span>
+      <span class="tag">World</span>
+
+      <h1>New Heading</h1>
+
+      <p>
+        This is a sample paragraph for demonstration purposes. Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Incidunt sapiente magni illo sed
+        nesciunt.
+      </p>
+
+      <button class="btn">Read More</button>
+    </div>
+
+    <div class="card2">
+      <p>This Is Z index Example Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima similiqu<span class="white">This Is Z index </span>  amet sapiente adipisci quasi cum itaque ad illum tempore id, <span class="white">Example</span> laboriosam unde vitae libero harum sequi?</p>
+      <img src="Assets/banner.jpg" alt="github">
+    </div>
+
+  </body>
+</html>

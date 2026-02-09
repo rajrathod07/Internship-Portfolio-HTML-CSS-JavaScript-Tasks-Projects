@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        background-image: url(https://github.com/rajrathod07/justtaskesimages/blob/main/images/formbg.jpg?raw=true);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+
+      .card {
+        width: 450px;
+        margin: 40px 25px;
+        padding: 20px;
+        background: #ffffffe8;
+        border-radius: 20px;
+        box-shadow: 1px 6px 30px black;
+        max-height: 80px;
+        overflow: hidden;
+        transition: max-height 0.6s;
+      }
+
+      .card2 {
+        width: 450px;
+        margin: -18px 25px;
+        padding: 20px;
+        background: #ffffffe8;
+        border-radius: 20px;
+        box-shadow: 1px 6px 30px rgba(0, 0, 0, 0.889);
+        max-height: 80px;
+        overflow: hidden;
+        transition: max-height 0.6s;
+      }
+
+      .card2:hover {
+        max-height: 400px;
+      }
+
+      .card:hover {
+        max-height: 700px;
+      }
+
+      h1 {
+        color: rgb(93, 53, 13);
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      label {
+        font-size: 15px;
+        display: block;
+        margin-top: 10px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="date"] {
+        width: 95%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+      }
+
+      input[type="radio"],
+      input[type="checkbox"] {
+        margin-left: 10px;
+      }
+
+      .row {
+        margin-top: 10px;
+      }
+
+      input[type="submit"] {
+        margin-top: 20px;
+        width: 100%;
+        padding: 12px;
+        background: rgb(139, 91, 36);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background: rgb(93, 53, 13);
+      }
+
+      .hint {
+        text-align: center;
+        color: rgb(93, 53, 13);
+        font-size: 14px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card">
+      <h1>REGISTRATION FORM</h1>
+      <p class="hint">Hover to open form</p>
+
+      <form>
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name" required />
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required />
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter password" required />
+
+        <div class="row">
+          <label>Gender</label>
+          <input type="radio" name="g" /> Male
+          <input type="radio" name="g" /> Female
+        </div>
+
+        <div class="row">
+          <label>Subjects</label>
+          <input type="checkbox" /> C <input type="checkbox" /> C++
+          <input type="checkbox" /> Java
+        </div>
+
+        <label>Date</label>
+        <input type="date" />
+
+        <input type="submit" value="Register" />
+      </form>
+    </div>
+
+    <div class="card2">
+      <h1>LOGIN FORM</h1>
+      <p class="hint">Hover to open form</p>
+
+      <form>
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" />
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter password" />
+
+        <input type="submit" value="Login" />
+      </form>
+    </div>
+  </body>
+</html>

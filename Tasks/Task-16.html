@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        .cal {
+            width: 350px;
+            background-color: #555;
+            margin: 150px auto;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        input[type="number"] {
+            width: 45%;
+            padding: 8px;
+            margin: 5px;
+            font-size: 16px;
+        }
+
+        input[type="button"] {
+            padding: 10px 15px;
+            font-size: 20px;
+            margin: 8px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+        }
+
+        h3 {
+            color: white;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="cal">
+    <h1>Operations</h1>
+
+    <input type="number" id="a" placeholder="Enter A">
+    <input type="number" id="b" placeholder="Enter B">
+
+    <br>
+
+    <input type="button" value="➕" onclick="calc('+')">
+    <input type="button" value="➖" onclick="calc('-')">
+    <input type="button" value="✖️" onclick="calc('*')">
+    <input type="button" value="➗" onclick="calc('/')">
+
+    <h3>Result: <span id="result">0</span></h3>
+</div>
+
+<script>
+    function calc(op) {
+        const a = Number(document.getElementById("a").value);
+        const b = Number(document.getElementById("b").value);
+
+        let ans;
+        if (op === '+') ans = a + b;
+        else if (op === '-') ans = a - b;
+        else if (op === '*') ans = a * b;
+        else if (op === '/') ans = a / b;
+
+        document.getElementById("result").innerText = ans;
+    }
+</script>
+
+</body>
+</html>

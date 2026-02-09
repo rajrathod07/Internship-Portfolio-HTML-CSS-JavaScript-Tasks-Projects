@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Colors and Borders</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-image: url("Assets/background.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        font-family: Arial, sans-serif;
+      }
+
+      .text-container {
+        width: 30%;
+        min-width: 280px;
+        background-color: rgba(197, 210, 230, 0.674);
+        margin: 80px 0 300px 30px;
+        border-radius: 18px;
+        text-align: center;
+        padding: 60px 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .text-container h1 {
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin: 10px 0;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+
+      .imgbg {
+        background-image: url("Assets/formbg.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+      }
+
+      .all-borders {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 100px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 300px;
+        width: 210%;
+      }
+
+      .same {
+        border-color: white;
+        padding: 30px;
+        width: 200px;
+        text-align: center;
+      }
+
+      .solid-border {
+        border: 5px solid;
+      }
+
+      .double-border {
+        border: 5px double;
+      }
+
+      .dashed-border {
+        border: 5px dashed;
+      }
+
+      .dotted-border {
+        border: 5px dotted;
+      }
+
+      .groove-border {
+        border: 5px groove;
+      }
+
+      .ridge-border {
+        border: 5px ridge;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="text-container">
+      <h1>
+        Scroll To See Borders <br />
+        ↓
+      </h1>
+
+      <p>solid border</p>
+      <p>double border</p>
+      <p>dashed border</p>
+      <p>dotted border</p>
+      <p>groove border</p>
+      <p>ridge border</p>
+    </div>
+
+    <div class="imgbg">
+      <div class="all-borders">
+        <div class="solid-border same">
+          <h2>Solid Border</h2>
+        </div>
+
+        <div class="double-border same">
+          <h2>Double Border</h2>
+        </div>
+
+        <div class="dashed-border same">
+          <h2>Dashed Border</h2>
+        </div>
+
+        <div class="dotted-border same">
+          <h2>Dotted Border</h2>
+        </div>
+
+        <div class="groove-border same">
+          <h2>Groove Border</h2>
+        </div>
+
+        <div class="ridge-border same">
+          <h2>Ridge Border</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
