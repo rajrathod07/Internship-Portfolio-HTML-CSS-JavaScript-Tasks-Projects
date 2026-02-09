@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Raj Rathod | Internship Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* BODY */
+
+    body {
+
+      background:
+        linear-gradient(135deg, #1e3c72, #2a5298);
+
+      min-height: 100vh;
+      color: #ffffff;
+
+    }
+
+
+    /* HEADER */
+
+    header {
+
+      text-align: center;
+
+      padding: 40px 20px 20px;
+
+      background: rgba(255, 255, 255, 0.05);
+
+      backdrop-filter: blur(8px);
+
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    }
+
+    header h1 {
+
+      font-size: 32px;
+
+      font-weight: 600;
+
+      letter-spacing: 1px;
+
+      margin-bottom: 8px;
+
+    }
+
+    header p {
+
+      font-size: 15px;
+
+      color: rgba(255, 255, 255, 0.75);
+
+    }
+
+
+    /* MAIN CONTAINER */
+
+    .container {
+
+      max-width: 1200px;
+
+      margin: auto;
+
+      padding: 40px 20px;
+
+    }
+
+
+    /* GRID */
+
+    .grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+      gap: 28px;
+
+    }
+
+
+    /* CARD */
+
+    .card {
+
+      background: rgba(255, 255, 255, 0.08);
+
+      border-radius: 18px;
+
+      padding: 28px 24px;
+
+      text-decoration: none;
+
+      color: white;
+
+      transition: all 0.3s ease;
+
+      border: 1px solid rgba(255, 255, 255, 0.12);
+
+      backdrop-filter: blur(6px);
+
+    }
+
+    .card:hover {
+
+      transform: translateY(-6px);
+
+      background: rgba(255, 255, 255, 0.14);
+
+      border: 1px solid rgba(255, 255, 255, 0.25);
+
+    }
+
+
+    /* ICON */
+
+    .icon {
+
+      width: 60px;
+
+      height: 60px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      border-radius: 14px;
+
+      margin-bottom: 16px;
+
+      font-size: 30px;
+
+      background: linear-gradient(135deg, #ff512f, #dd2476);
+
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.35);
+
+    }
+
+    /* different colors */
+
+    .card:nth-child(2n) .icon {
+      background: linear-gradient(135deg, #36d1dc, #5b86e5);
+    }
+
+    .card:nth-child(3n) .icon {
+      background: linear-gradient(135deg, #ff9966, #ff5e62);
+    }
+
+    .card:nth-child(4n) .icon {
+      background: linear-gradient(135deg, #00c9ff, #92fe9d);
+    }
+
+    .card:nth-child(5n) .icon {
+      background: linear-gradient(135deg, #f7971e, #ffd200);
+    }
+
+
+    /* TEXT */
+
+    .card h3 {
+
+      font-size: 19px;
+
+      font-weight: 600;
+
+      margin-bottom: 6px;
+
+    }
+
+    .card p {
+
+      font-size: 14px;
+
+      color: rgba(255, 255, 255, 0.75);
+
+    }
+
+
+    /* FOOTER */
+
+    footer {
+
+      text-align: center;
+
+      padding: 25px;
+
+      font-size: 14px;
+
+      color: rgba(255, 255, 255, 0.7);
+
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+      margin-top: 40px;
+
+      background: rgba(255, 255, 255, 0.05);
+
+    }
+
+
+    /* MOBILE */
+
+    @media(max-width:600px) {
+
+      header h1 {
+
+        font-size: 24px;
+
+      }
+
+      .container {
+
+        padding: 25px 15px;
+
+      }
+
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <header>
+
+    <h1>Raj Rathod Internship Portfolio</h1>
+
+    <p>Tasks and Projects Completed During Internship</p>
+
+  </header>
+
+
+  <div class="container">
+
+    <div class="grid">
+
+      <!-- Task 1 -->
+      <a href="Task-1.html" class="card">
+        <div class="icon"><span class="material-icons">waving_hand</span></div>
+        <h3>Task 1</h3>
+        <p>Introduction</p>
+      </a>
+
+      <!-- Task 2 -->
+      <a href="Task-2.html" class="card">
+        <div class="icon"><span class="material-icons">public</span></div>
+        <h3>Task 2</h3>
+        <p>Profile Online</p>
+      </a>
+
+      <!-- Task 2.1 -->
+      <a href="Task-2.1.html" class="card">
+        <div class="icon"><span class="material-icons">account_circle</span></div>
+        <h3>Task 2.1</h3>
+        <p>Profile Page</p>
+      </a>
+
+      <!-- Task 3 -->
+      <a href="Task-3.html" class="card">
+        <div class="icon"><span class="material-icons">menu_book</span></div>
+        <h3>Task 3</h3>
+        <p>Biography</p>
+      </a>
+
+      <!-- Task 4 -->
+      <a href="Task-4.html" class="card">
+        <div class="icon"><span class="material-icons">terminal</span></div>
+        <h3>Task 4</h3>
+        <p>Linux</p>
+      </a>
+
+      <!-- Task 5 -->
+      <a href="Task-5.1.html" class="card">
+        <div class="icon"><span class="material-icons">photo_library</span></div>
+        <h3>Task 5</h3>
+        <p>Image Gallery</p>
+      </a>
+
+      <!-- Task 6 -->
+      <a href="Task-6.html" class="card">
+        <div class="icon"><span class="material-icons">table_chart</span></div>
+        <h3>Task 6</h3>
+        <p>List & Table</p>
+      </a>
+
+      <!-- Task 7 -->
+      <a href="Task-7.html" class="card">
+        <div class="icon"><span class="material-icons">description</span></div>
+        <h3>Task 7</h3>
+        <p>Forms</p>
+      </a>
+
+      <!-- Task 8 -->
+      <a href="Task-8.html" class="card">
+        <div class="icon"><span class="material-icons">web</span></div>
+        <h3>Task 8</h3>
+        <p>Web Layout</p>
+      </a>
+
+      <!-- Task 9 -->
+      <a href="Task-9.html" class="card">
+        <div class="icon"><span class="material-icons">devices</span></div>
+        <h3>Task 9</h3>
+        <p>Responsive Site</p>
+      </a>
+
+      <!-- Task 10 -->
+      <a href="Task-10.html" class="card">
+        <div class="icon"><span class="material-icons">image</span></div>
+        <h3>Task 10</h3>
+        <p>Background Image</p>
+      </a>
+
+      <!-- Task 11 -->
+      <a href="Task-11.html" class="card">
+        <div class="icon"><span class="material-icons">space_bar</span></div>
+        <h3>Task 11</h3>
+        <p>Margin vs Padding</p>
+      </a>
+
+      <!-- Task 12 -->
+      <a href="Task-12.html" class="card">
+        <div class="icon"><span class="material-icons">person</span></div>
+        <h3>Task 12</h3>
+        <p>Portfolio</p>
+      </a>
+
+      <!-- Task 13 -->
+      <a href="Task-13.html" class="card">
+        <div class="icon"><span class="material-icons">align_horizontal_center</span></div>
+        <h3>Task 13</h3>
+        <p>Index & Alignment</p>
+      </a>
+
+      <!-- Task 14 -->
+      <a href="Task-14.html" class="card">
+        <div class="icon"><span class="material-icons">dashboard</span></div>
+        <h3>Task 14</h3>
+        <p>Dashboard UI</p>
+      </a>
+
+      <!-- Task 15 -->
+      <a href="Task-15.html" class="card">
+        <div class="icon"><span class="material-icons">data_object</span></div>
+        <h3>Task 15</h3>
+        <p>Data Display with JS</p>
+      </a>
+
+      <!-- Task 16 -->
+      <a href="Task-16.html" class="card">
+        <div class="icon"><span class="material-icons">calculate</span></div>
+        <h3>Task 16</h3>
+        <p>Calculator</p>
+      </a>
+
+      <!-- Task 17 -->
+      <a href="Task-17.html" class="card">
+        <div class="icon"><span class="material-icons">functions</span></div>
+        <h3>Task 17</h3>
+        <p>User Defined Function</p>
+      </a>
+
+      <!-- Task 18 -->
+      <a href="Task-18.html" class="card">
+        <div class="icon"><span class="material-icons">alt_route</span></div>
+        <h3>Task 18</h3>
+        <p>JavaScript Control Flow</p>
+      </a>
+
+      <!-- Task 19 -->
+      <a href="Task-19.js" class="card">
+        <div class="icon"><span class="material-icons">javascript</span></div>
+        <h3>Task 19</h3>
+        <p>JavaScript</p>
+      </a>
+
+      <!-- Task 20 -->
+      <a href="Task-20.html" class="card">
+        <div class="icon"><span class="material-icons">how_to_reg</span></div>
+        <h3>Task 20</h3>
+        <p>Signup Form Validation</p>
+      </a>
+
+      <!-- Final Project -->
+      <a href="https://passvault.gt.tc" class="card" target="_blank">
+        <div class="icon"><span class="material-icons">rocket_launch</span></div>
+        <h3>Final Project</h3>
+        <p>Password Manager Project</p>
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <footer>
+
+    © 2026 Raj Rathod | Internship Portfolio
+
+  </footer>
+
+
+</body>
+
+</html>
