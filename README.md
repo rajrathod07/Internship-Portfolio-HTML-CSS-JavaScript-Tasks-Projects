@@ -12,7 +12,6 @@ This repository contains all the tasks and projects I completed during my Web De
 - Forms & Validation
 - Image Gallery
 - Layout Design
-- Linux Commands
 - Portfolio Development
 
 ## Tasks Included
