@@ -2,6 +2,8 @@
 
 This repository contains all the tasks and projects I completed during my Web Development Internship. It demonstrates my learning and practical implementation of HTML, CSS, JavaScript, and Linux fundamentals.
 
+View Task : https://rajrathod07.github.io/Internship-Portfolio-HTML-CSS-JavaScript-Tasks-Projects/
+
 ## Skills Covered
 
 - HTML5
